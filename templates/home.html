@@ -1,0 +1,533 @@
+<!DOCTYPE html>
+<html>
+    <head lang="en">
+        <title>Robson Júnior</title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="shortcut icon" href="{{ url_for('static', filename='icons/terminal_icon_3.png') }}"/>
+        <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/card.css') }}">
+        <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.css" />
+        <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+        <script src="https://unpkg.com/swiper/swiper-bundle.js"></script>
+        <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    </head>
+    <style type="text/css">
+
+        .header {
+            float: left;
+            position: fixed;
+            width: 99%;
+            height: 25vh;
+            background-color: rgba(0, 0, 0, .3);
+        }
+
+        .header:hover {
+            background-color: #000000;
+        }
+
+        .header:hover .profile-name b {
+            color: #FFFFFF;
+        }
+
+        .header:hover .profile-name i {
+            color: #FFFFFF;
+        }
+
+        .pic-d {
+            float: left;
+            width: 100%;
+            height: 60%;
+        }
+
+        .name-d {
+            float: left;
+            width: 100%;
+            height: 35%;
+            margin-top: 1%;
+        }
+
+        .profile-picture {
+            width: 10%;
+            height: 100%;
+            top: 50%;
+            left: 50%;
+            position: relative;
+            transform: translateX(-50%) translateY(-50%);
+        }
+
+        .profile-picture img {
+            min-width: 100%;
+            height: 100%;
+            border-radius: 50%;
+        }
+
+        .profile-name {
+            width: 80%;
+            height: 100%;
+            top: 50%;
+            left: 50%;
+            position: relative;
+            transform: translateX(-50%) translateY(-50%);
+            text-align: center;
+        }
+
+        .profile-name b {
+            font-size: 28px;
+            color: #000000;
+        }
+
+        .profile-name i {
+            font-size: 20px;
+            color: #000000;
+        }
+
+        .main-content {
+            float: left;
+            width: 100%;
+            max-height: 100vh;
+            padding-top: 30vh;
+        }
+
+        .suplog {
+            height: 50%;
+            content: url("{{ url_for('static', filename='logo/suplog.jpeg') }}");
+        }
+
+        @media (min-width: 100px) and (max-width: 1330px) {
+            .profile-picture {
+                width: 20%;
+            }
+        }
+
+        .swiper-container {
+            width: 100%;
+            height: 100%;
+        }
+
+    </style>
+    <body>
+        <div class="header">
+            <div class="pic-d">
+                <div class="profile-picture">
+                    <img src="{{ url_for('static', filename='profile_images/img_1.jpg') }}">
+                </div>
+            </div>
+            <div class="name-d">
+                <div class="profile-name">
+                    <b>Robson Júnior</b>
+                    <br>
+                    <i>Linux User | IT Auxiliary | Python Programmer | Web Scraper | Web Crawler | Web System Developer</i>
+                </div>
+            </div>
+        </div>
+        <div class="main-content">
+
+            <!-- Slider main container -->
+            <div class="swiper-container">
+                <!-- Additional required wrapper -->
+                <div class="swiper-wrapper">
+                    <!-- Slides -->
+
+                    <section class="card-list swiper-slide">
+
+                        <article class="card">
+                            <header class="card-header">
+                                <p>9 Jun 2020 - Present</p>
+                                <h2>Anonymous</h2>
+                                <h1>Python Programmer (Freelancer)</h1>
+                                <br>
+                                <span>Lisbon (Portugal)</span>
+                            </header>
+                            <div class="card-author">
+                                <span>◦ Web system development (CRM).</span>
+                            </div>
+                            <div class="tags">
+                                <a href="#">Linux</a>
+                                <a href="#">Windows</a>
+                                <a href="#">Python 3.x</a>
+                                <a href="#">Django</a>
+                                <a href="#">requests</a>
+                                <a href="#">beautifulsoup4</a>
+                                <a href="#">openpyxl</a>
+                                <a href="#">pdf2image</a>
+                                <a href="#">pdfkit</a>
+                                <a href="#">Pillow</a>
+                                <a href="#">pyexcel</a>
+                                <a href="#">pywin32</a>
+                                <a href="#">selenium</a>
+                                <a href="#">lxml</a>
+                                <a href="#">SQLite</a>
+                                <a href="#">html</a>
+                                <a href="#">css</a>
+                                <a href="#">javascript</a>
+                                <a href="#">git</a>
+                            </div>
+                        </article>
+
+                        <article class="card">
+                            <header class="card-header">
+                                <p>Apr 2020 - Present</p>
+                                <h2>Au2mobile</h2>
+                                <h1>Python Programmer (Professional Internship)</h1>
+                                <br>
+                                <span>Hamburg (Germany)</span>
+                            </header>
+                            <div class="card-author">
+                                <span>- Web system development (CRM);</span><br>
+                                <span>- Web Scraping;</span><br>
+                                <span>- Fixing and improving of code.</span><br>
+                                <span>- Maintaining a complex Python</span><br>
+                                <span>&ensp; Scraper Tool;</span><br>
+                                <span>- Documentation of the Tool Structure;</span><br>
+                                <span>- Analysing errors and Supporting the</span><br>
+                                <span>&ensp; Team in finding Solutions.</span>
+                            </div>
+                            <div class="tags">
+                                <a href="#">Linux</a>
+                                <a href="#">Python 3.x</a>
+                                <a href="#">Flask</a>
+                                <a href="#">requests</a>
+                                <a href="#">beautifulsoup</a>
+                                <a href="#">urllib</a>
+                                <a href="#">SQLite</a>
+                                <a href="#">MySQL</a>
+                                <a href="#">html</a>
+                                <a href="#">css</a>
+                                <a href="#">javascript</a>
+                                <a href="#">git</a>
+                            </div>
+                        </article>
+
+                        <article class="card">
+                            <header class="card-header">
+                                <p>20 Jan 2020 - Present</p>
+                                <h2>SupLog</h2>
+                                <h1>Python Programmer (Freelancer)</h1>
+                                <br>
+                                <span>Caruaru (Brazil)</span>
+                            </header>
+                            <div class="card-author">
+                                <span>◦ Web system development (CRM).</span>
+                            </div>
+                            <div class="tags">
+                                <a href="#">Linux</a>
+                                <a href="#">Python 3.x</a>
+                                <a href="#">Flask</a>
+                                <a href="#">MySQL</a>
+                                <a href="#">pythonanywhere</a>
+                                <a href="#">HTML</a>
+                                <a href="#">CSS</a>
+                                <a href="#">bootstrap</a>
+                                <a href="#">javascript</a>
+                                <a href="#">git</a>
+                            </div>
+                        </article>
+
+                        <article class="card">
+                            <header class="card-header">
+                                <p>Aug 2019 - Present</p>
+                                <h2 class="pib">Primeira Igreja Batista</h2>
+                                <h1>Python Programmer (Voluntary)</h1>
+                                <br>
+                                <span>Caruaru (Brazil)</span>
+                            </header>
+                            <div class="card-author">
+                                <span>◦ Desktop apps development.</span>
+                            </div>
+                            <div class="tags">
+                                <a href="#">Windows</a>
+                                <a href="#">Python 3.x</a>
+                                <a href="#">tkinter</a>
+                                <a href="#">SQLite</a>
+                                <a href="#">pythonanywhere</a>
+                                <a href="#">git</a>
+                            </div>
+                        </article>
+
+                        <article class="card">
+                            <header class="card-header">
+                                <p>Apr 2019 - Present</p>
+                                <h2>Fiverr</h2>
+                                <h1>Python Programmer (Freelancer)</h1>
+                            </header>
+                            <div class="card-author">
+                                <span>◦ Script coding;</span><br>
+                                <span>◦ Web Scraping;</span><br>
+                                <span>◦ Data Collect;</span><br>
+                                <span>◦ Robots development;</span><br>
+                                <span>◦ Automation;</span><br>
+                                <span>◦ Digital Signage;</span><br>
+                                <span>◦ Web systems development.</span>
+                            </div>
+                            <div class="tags">
+                                <a href="#">Linux</a>
+                                <a href="#">Windows</a>
+                                <a href="#">Python 2.x</a>
+                                <a href="#">Python 3.x</a>
+                                <a href="#">SQLite</a>
+                                <a href="#">MySQL</a>
+                                <a href="#">PostgreSQL</a>
+                                <a href="#">mongodb</a>
+                                <a href="#">Scrapy</a>
+                                <a href="#">Selenium</a>
+                                <a href="#">Flask</a>
+                                <a href="#">Django</a>
+                                <a href="#">aiohttp</a>
+                                <a href="#">asyncio</a>
+                                <a href="#">redis</a>
+                                <a href="#">celery</a>
+                                <a href="#">Nginx</a>
+                                <a href="#">uWSGI</a>
+                                <a href="#">docker</a>
+                                <a href="#">javascript</a>
+                                <a href="#">HTML</a>
+                                <a href="#">CSS</a>
+                                <a href="#">git</a>
+                            </div>
+                        </article>
+
+                    </section>
+
+                    <section class="card-list swiper-slide">
+
+                        <article class="card">
+                            <header class="card-header">
+                                <p>21 Jan 2019 - 15 Mar 2019</p>
+                                <h2>Adapta Group</h2>
+                                <h1>Python Programmer</h1>
+                                <br>
+                                <span>Caruaru (Brazil)</span>
+                            </header>
+                            <div class="card-author">
+                                <span>◦ Web system development</span><br>
+                                <span>&ensp; (social network);</span><br>
+                                <span>◦ Automation (robot).</span>
+                            </div>
+                            <div class="tags">
+                                <a href="#">Linux</a>
+                                <a href="#">Windows</a>
+                                <a href="#">Python 3.x</a>
+                                <a href="#">Flask</a>
+                                <a href="#">PostgreSQL</a>
+                                <a href="#">html</a>
+                                <a href="#">css</a>
+                                <a href="#">javascript</a>
+                                <a href="#">socketio</a>
+                                <a href="#">Selenium</a>
+                                <a href="#">tkinter</a>
+                                <a href="#">PyGTK</a>
+                                <a href="#">requests</a>
+                                <a href="#">lxml</a>
+                                <a href="#">git</a>
+                            </div>
+                        </article>
+
+                        <article class="card">
+                            <header class="card-header">
+                                <p>Nov 2018 - Present</p>
+                                <h2>Upwork</h2>
+                                <h1>Python Programmer (Freelancer)</h1>
+                            </header>
+                            <div class="card-author">
+                                <span>◦ Script coding;</span><br>
+                                <span>◦ Web Scraping;</span><br>
+                                <span>◦ Data Collect;</span><br>
+                                <span>◦ Robots development;</span><br>
+                                <span>◦ Automation;</span><br>
+                                <span>◦ Digital Signage;</span><br>
+                                <span>◦ Web systems development.</span>
+                            </div>
+                            <div class="tags">
+                                <a href="#">Linux</a>
+                                <a href="#">Windows</a>
+                                <a href="#">Python 2.x</a>
+                                <a href="#">Python 3.x</a>
+                                <a href="#">SQLite</a>
+                                <a href="#">MySQL</a>
+                                <a href="#">PostgreSQL</a>
+                                <a href="#">mongodb</a>
+                                <a href="#">Scrapy</a>
+                                <a href="#">Selenium</a>
+                                <a href="#">Flask</a>
+                                <a href="#">Django</a>
+                                <a href="#">aiohttp</a>
+                                <a href="#">asyncio</a>
+                                <a href="#">redis</a>
+                                <a href="#">celery</a>
+                                <a href="#">Nginx</a>
+                                <a href="#">uWSGI</a>
+                                <a href="#">docker</a>
+                                <a href="#">javascript</a>
+                                <a href="#">HTML</a>
+                                <a href="#">CSS</a>
+                                <a href="#">git</a>
+                            </div>
+                        </article>
+
+                        <article class="card">
+                            <header class="card-header">
+                                <p>Mar 2018 - May 2018</p>
+                                <h2>WD7 Soluções Web</h2>
+                                <h1>Python Programmer (Freelancer)</h1>
+                                <br>
+                                <span>Caruaru (Brazil)</span>
+                            </header>
+                            <div class="card-author">
+                                <span>◦ Web scraping.</span>
+                            </div>
+                            <div class="tags">
+                                <a href="#">Linux</a>
+                                <a href="#">Python 3.x</a>
+                                <a href="#">Scrapy</a>
+                                <a href="#">lxml</a>
+                                <a href="#">cfscrape</a>
+                                <a href="#">regex</a>
+                            </div>
+                        </article>
+
+                        <article class="card">
+                            <header class="card-header">
+                                <p>Jul 2014 - Mar 2019</p>
+                                <h2>Maximum</h2>
+                                <h1>IT Auxiliary (Freelancer)</h1>
+                                <br>
+                                <span>Caruaru (Brazil)</span>
+                            </header>
+
+                            <div class="card-author">
+                                <span>- Assembling and repairs of servers and</span><br>
+                                <span>&ensp; computers;</span><br>
+                                <span>- Printer and routers setup;</span><br>
+                                <span>- Formatting and configuration windows</span><br>
+                                <span>&ensp; and Linux;</span><br>
+                                <span>- Software installation</span><br>
+                                <span>- Network drive mapping.</span>
+                            </div>
+                            <div class="tags">
+                                <a href="#">Linux</a>
+                                <a href="#">Windows</a>
+                                <a href="#">tp-link</a>
+                                <a href="#">d-link</a>
+                            </div>
+                        </article>
+
+                        <article class="card">
+                            <header class="card-header">
+                                <p>7 Jan 2013 - 7 Oct 2017</p>
+                                <h2 class="rmsjt">R M DA SILVA JUNIOR TRANSPORTES</h2>
+                                <h1>Driver</h1>
+                                <br>
+                                <span>Caruaru (Brazil)</span>
+                            </header>
+                            <div class="card-author">
+                                <span>◦ Help in the loading and unloading of</span><br>
+                                <span>&ensp; goods;</span><br>
+                                <span>◦ Control and delivery of the goods;</span><br>
+                                <span>◦ Customer service.</span>
+                            </div>
+                            <div class="tags">
+                                <a href="#">Logistic</a>
+                                <a href="#">goods</a>
+                            </div>
+                        </article>
+
+                    </section>
+
+                    <section class="card-list swiper-slide">
+
+                        <article class="card">
+                            <header class="card-header">
+                                <p>1 Nov 2012 - 20 Nov 2012</p>
+                                <h2>Engemétodos</h2>
+                                <h1>Storeroom Helper</h1>
+                                <br>
+                                <span>Caruaru (Brazil)</span>
+                            </header>
+
+                            <div class="card-author">
+                                <span>◦ Control and release of apparatus.</span>
+                            </div>
+                            <div class="tags">
+                                <a href="#">electric apparatus</a>
+                            </div>
+                        </article>
+
+                        <article class="card">
+                            <header class="card-header">
+                                <p>1 Jul 2010 - 1 Jul 2011</p>
+                                <h2>Celpe</h2>
+                                <h1>Trainee (Electrotechnics)</h1>
+                                <br>
+                                <span>Caruaru (Brazil)</span>
+                            </header>
+                            <div class="card-author">
+                                <span>◦ Worked in electrical function,</span><br>
+                                <span>&ensp; typing services ran, where</span><br>
+                                <span>&ensp; performed activities as:</span><br>
+                                <span>&ensp; extraction, creation and</span><br>
+                                <span>&ensp; analysis of reports,</span><br>
+                                <span>&ensp; generation services,</span><br>
+                                <span>&ensp; complementary notes,</span><br>
+                                <span>&ensp; creating Protocol.</span>
+                            </div>
+                            <div class="tags">
+                                <a href="#">MS Office</a>
+                            </div>
+                        </article>
+
+                        <article class="card">
+                            <header class="card-header">
+                                <p>5 Apr 2010 - 3 Jul 2010</p>
+                                <h2>WS Park Ltda.</h2>
+                                <h1>Auditor</h1>
+                                <br>
+                                <span>Caruaru (Brazil)</span>
+                            </header>
+                            <div class="card-author">
+                                <span>◦ Auditing of the mall's stores.</span>
+                            </div>
+                            <div class="tags">
+                            </div>
+                        </article>
+
+                    </section>
+
+                </div>
+                <!-- If we need pagination -->
+                <div class="swiper-pagination"></div>
+
+                <!-- If we need navigation buttons -->
+                <div class="swiper-button-prev"></div>
+                <div class="swiper-button-next"></div>
+
+                <!-- If we need scrollbar -->
+                <div class="swiper-scrollbar"></div>
+            </div>
+
+        </div>
+        <script type="text/javascript">
+            var mySwiper = new Swiper('.swiper-container', {
+                // Optional parameters
+                direction: 'horizontal',
+                loop: true,
+
+                // If we need pagination
+                pagination: {
+                    el: '.swiper-pagination',
+                },
+
+                // Navigation arrows
+                navigation: {
+                    nextEl: '.swiper-button-next',
+                    prevEl: '.swiper-button-prev',
+                },
+
+                // And if we need scrollbar
+                scrollbar: {
+                    el: '.swiper-scrollbar',
+                },
+            });
+
+        </script>
+    </body>
+</html>
